@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0D17" />
+      <stop offset="50%" stop-color="#121626" />
+      <stop offset="100%" stop-color="#1A1F38" />
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="accent-grad-1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF6B6B" />
+      <stop offset="100%" stop-color="#FF8E53" />
+    </linearGradient>
+    <linearGradient id="accent-grad-2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4E65FF" />
+      <stop offset="100%" stop-color="#92EFFD" />
+    </linearGradient>
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#8F94A5" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="400" rx="15" fill="url(#bg-grad)" />
+
+  <!-- Grid Pattern Overlay -->
+  <g opacity="0.05">
+    <path d="M 0,50 L 1200,50 M 0,100 L 1200,100 M 0,150 L 1200,150 M 0,200 L 1200,200 M 0,250 L 1200,250 M 0,300 L 1200,300 M 0,350 L 1200,350" stroke="#FFFFFF" stroke-width="1" />
+    <path d="M 100,0 L 100,400 M 200,0 L 200,400 M 300,0 L 300,400 M 400,0 L 400,400 M 500,0 L 500,400 M 600,0 L 600,400 M 700,0 L 700,400 M 800,0 L 800,400 M 900,0 L 900,400 M 1000,0 L 1000,400 M 1100,0 L 1100,400" stroke="#FFFFFF" stroke-width="1" />
+  </g>
+
+  <!-- Abstract Scaling Curves (Graph Visualization) -->
+  <g opacity="0.25">
+    <!-- Curve 1 (Parameters N) -->
+    <path d="M 100,350 Q 300,330 500,250 T 900,120 T 1100,80" fill="none" stroke="url(#accent-grad-1)" stroke-width="4" filter="url(#glow)" />
+    <!-- Curve 2 (Dataset D) -->
+    <path d="M 100,350 Q 400,340 700,220 T 1000,150 T 1100,130" fill="none" stroke="url(#accent-grad-2)" stroke-width="3" />
+    <!-- Curve 3 (Compute C) -->
+    <path d="M 100,350 Q 250,300 600,180 T 800,90 T 1100,50" fill="none" stroke="#6C63FF" stroke-width="2" stroke-dasharray="10,5" />
+  </g>
+
+  <!-- Nodes / Data Points on Curves -->
+  <g opacity="0.6">
+    <circle cx="500" cy="250" r="6" fill="#FF6B6B" filter="url(#glow)" />
+    <circle cx="900" cy="120" r="8" fill="#FF8E53" filter="url(#glow)" />
+    <circle cx="700" cy="220" r="6" fill="#4E65FF" filter="url(#glow)" />
+    <circle cx="1000" cy="150" r="6" fill="#92EFFD" filter="url(#glow)" />
+    <circle cx="600" cy="180" r="5" fill="#6C63FF" />
+  </g>
+
+  <!-- Title & Text -->
+  <g transform="translate(100, 150)">
+    <!-- Subtitle / Topic -->
+    <text x="0" y="0" font-family="'Segoe UI', Roboto, Helvetica, sans-serif" font-size="20" font-weight="600" fill="url(#accent-grad-2)" letter-spacing="4" text-transform="uppercase">
+      Neural Language Models
+    </text>
+    <!-- Main Title -->
+    <text x="0" y="65" font-family="'Segoe UI', Roboto, Helvetica, sans-serif" font-size="56" font-weight="800" fill="url(#text-grad)" letter-spacing="1">
+      Anthropic Scaling Laws
+    </text>
+    <!-- Tagline -->
+    <text x="0" y="110" font-family="'Segoe UI', Roboto, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#8F94A5" letter-spacing="0.5">
+      Empirical analysis of Parameters (N), Dataset Size (D), and Compute (C)
+    </text>
+  </g>
+
+  <!-- Decorative Corner Elements -->
+  <path d="M 30,30 L 70,30 M 30,30 L 30,70" fill="none" stroke="url(#accent-grad-1)" stroke-width="3" opacity="0.7" />
+  <path d="M 1170,30 L 1130,30 M 1170,30 L 1170,70" fill="none" stroke="url(#accent-grad-2)" stroke-width="3" opacity="0.7" />
+  <path d="M 30,370 L 70,370 M 30,370 L 30,330" fill="none" stroke="url(#accent-grad-2)" stroke-width="3" opacity="0.7" />
+  <path d="M 1170,370 L 1130,370 M 1170,370 L 1170,330" fill="none" stroke="url(#accent-grad-1)" stroke-width="3" opacity="0.7" />
+</svg>
