@@ -85,4 +85,19 @@ These mathematical truths directly govern the design decisions of modern frontie
     *   Validates the idea that bigger networks become inherently smarter. Next-token prediction optimization naturally unlocks advanced cognitive capabilities.
     *   Studies on emergent capabilities ([Wei et al., 2022](https://arxiv.org/abs/2206.07682)) and scaling critiques ([Schaeffer et al., 2023](https://arxiv.org/abs/2304.15004)) discuss how these curves map to downstream task breakthroughs.
 
+---
+
+## ⭐️ Star History
+
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAnthropic-Scaling-Laws&type=date&legend=bottom-right">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Anthropic-Scaling-Laws&type=date&theme=dark&legend=bottom-right" />
+  <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Anthropic-Scaling-Laws&type=date&legend=bottom-right" />
+  <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Anthropic-Scaling-Laws&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
+
+
 
